@@ -1,8 +1,12 @@
 
-function takeANumber(current, newInLine) {
-  var newInLine = []
-  for (var i = 0; i < current.length; i++) {
-    array.push(current[i] + newInLine[i]);
+function takeANumber(katzDeli, name) {
+  var katzDeliLine = []
+  names = ["Ada", "Grace", "Kent"]
+  for (let i = 0; i < name.length; i++) {
+    if (names[i] == name) {
+      return `Welcome ${name[i]},
+      You are ${i} in line`;
+    }
   }
-  return array
+  return "you are not in our system";
 }
