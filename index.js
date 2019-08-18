@@ -4,7 +4,7 @@ function takeANumber(katzDeliLine, name) {
   }
 //passed
 function nowServing(katzDeliLine) {
-  if katzDeliLine[0] === undefined) {
+  if (katzDeliLine[0] === undefined) {
     return "There is nobody waiting to be served!"
   } else {
     var firstInLine = katzDeliLine.shift()
