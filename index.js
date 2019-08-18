@@ -1,12 +1,7 @@
 
-function takeANumber(katzDeli, name) {
-  var katzDeliLine = []
-  names = ["Ada", "Grace", "Kent"]
-  for (let i = 0; i < name.length; i++) {
-    if (names[i] == name) {
-      return `Welcome ${name[i]},
+function takeANumber(katzDeliLine, name) {
+  katzDeliLine.push(name)
+  return "Welcome, " + name + ". You are number " + (katzDeliLine.indexOf(name) + 1) + " in line."
       You are ${i} in line`;
     }
-  }
-  return "you are not in our system";
-}
+
